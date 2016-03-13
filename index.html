@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="index-scroll.css">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+	<script>
+	$(document).ready(function(){
+	
+	$('a[href^="#"]').on('click',function (e) {
+			e.preventDefault();
+
+			var target = this.hash;
+			var $target = $(target);
+
+			$('ul.tabs li a').removeClass('current-tab');
+			$(this).addClass('current-tab');
+
+			$('html, body').stop().animate({
+				'scrollTop': $target.offset().top
+			}, 900, 'swing', function () {
+			});
+		});
+	});
+	</script>
+</head>
+
+<body>
+<div id="navbar">
+	<div id="name">
+		<h1>Michelle Nguyen</h1>
+	</div>
+	<ul class="tabs">
+		<li><a href="#about" class="current-tab">About</a></li>
+		<li><a href="#projects">Projects</a></li>
+		<li><a href="#contact">Contact</a></li>
+	</ul>
+</div>
+
+<div id="about">
+	<div id="abt">
+		<h1>About</h1>
+	</div>
+</div>
+
+
+<div id="projects">
+	<div id="proj">
+		<h1>Projects</h1>
+	</div>
+</div>
+
+<div id="contact">
+		<div id="cont">
+			<h1>Contact</h1>
+		</div>
+	</div>
+
+
+	<div id="footer">&nbsp;</div>
+<!-- container -->
+</body>
+</html>
