@@ -13,49 +13,64 @@
 
 <body>
 
-<div id="whole">
+
 <div id="navbar">
 	<div id="name">
 		<h1>Michelle Nguyen</h1>
 	</div>
 	<ul class="tabs">
-		<li><a href="#about" class="current-tab">About</a></li>
-		<li><a href="#projects">Projects</a></li>
-		<li><a href="#contact">Contact</a></li>
+			<li num="1" class="tab-link current-tab" data-tab="tab-1">About</li>
+		<li num="2" class="tab-link" data-tab="tab-2">Projects</li>
+		<li num="3" class="tab-link" data-tab="tab-3">Contact</li>
 	</ul>
 </div>
 
 <div id="contents">
-	<div id="about">
-		<div id="abt">
-			<h1>About</h1>
-			<h5>
-				<p>> A computer science student pursuing a bachelor's degree at the University of California, San Diego.</p>
+	<div id="tab-1" class="tab-content current">
+		<h1>Loading character profile...</h1>
+		<h5>
+			<p>> An undergraduate computer science student at the University of California, San Diego.</p>
 
-				<p>> Experienced with C/C++, Java, HTML, CSS, jQuery, and JavaScript.</p>
+			<p>> Experienced with C/C++, Java, HTML, CSS, jQuery, and JavaScript.</p>
 
-				<p>> Has an interest in video game creation and design.</p>
-			</h5>
-		</div>
+			<p>> Has a particular interest in video game development, creation, and design.</p>
+		</h5>
 	</div>
 
+	<div id="tab-2" class="tab-content">
+		<h1>Retrieving projects...</h1>
+		<h3>
+			<div class="hov-out">
+				<div class="proj-out">
+				<img src="project-1.png" class="proj-img"/><img src="project-2.png" class="proj-img"/><img src="http://placehold.it/300x150" class="proj-img"/>
+				</div>
 
-	<div id="projects">
-		<div id="proj">
-			<div id="proj-in">
-				<h1>Projects</h1>
+				<div class="proj-out proj-bot">
+				<div class="proj-hov">
+					<b><a href="project-1.html">Connect Four</a></b>
+					Interactive user-vs-AI game using Java Swing APIs.
+				</div>
+				<div class="proj-hov">
+					<b><a href="project-2.html">Timey Quest</a></b>
+					Mobile-friendly web app designed for productivity.
+				</div>
+				<div class="proj-hov">
+					<b><a href="project-3.html">Music App</a></b>
+					Redesigning music players with the user in mind.
+				</div>
+				</div>
 			</div>
-		</div>
+		</h3>
 	</div>
 
-	<div id="contact">
-		<div id="cont">
-			<h1>Contact</h1>
-		</div>
+	<div id="tab-3" class="tab-content">
+		<h1>Recovering contact information...</h1>
+		<h4>
+			<p>e-mail: mqn008@ucsd.edu</p>
 
-	<div id="footer">&nbsp;</div>
+			<p>phone: (###) ###-####</p>
+		</h4>
 	</div>
-</div>
 
 </div>
 <!-- container -->

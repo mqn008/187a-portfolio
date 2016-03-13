@@ -101,12 +101,14 @@ ul.tabs li, ul.tabs li a {
 
 #footer {
 	clear: both;
-	height: 500px;
 }
 
 #about, #projects, #contact {
 	width: 98%;
 	margin: auto;
+	height: 500px;
+	display: block;
+	background-color: #ffffff;
 }
 
 #abt {
@@ -115,6 +117,7 @@ ul.tabs li, ul.tabs li a {
 
 #proj {
 	margin-top: 120px;
+	margin-bottom: 500px;
 }
 
 #proj-in {
@@ -125,10 +128,6 @@ ul.tabs li, ul.tabs li a {
 	margin-top: 120px;
 }
 
-#contents {
-	width: 98%;
-}
-
 #contents h1 {
 
 	font-family: 'Press Start 2P', cursive;
@@ -137,16 +136,24 @@ ul.tabs li, ul.tabs li a {
 	font-size: 22px;
 }
 
-#contents h5 {
+h5, h4, h3 {
 	margin-top: 40px;
 }
 
-#contents h5 p {
+h5 p {
 	font-family: 'Play', sans-serif;
 	font-size: 26px;
 	margin: 25px 50px 0px 120px;
 	text-indent: -21px;
 }
+
+
+h4 p {
+	font-family: 'Play', sans-serif;
+	font-size: 26px;
+	margin: 25px 50px 0px 120px;
+}
+
 
 ::-webkit-scrollbar {
 	width: 8px;
@@ -162,4 +169,78 @@ ul.tabs li, ul.tabs li a {
 	-webkit-border-radius: 10%;
 	-moz-border-radius: 10%;
 	-o-border-radius: 10%;
+}
+
+.tab-content {
+	position: absolute;
+	margin-top: 130px;
+	display: none;
+	padding: 20px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	width: 98%;
+}
+
+.tab-content.current {
+	display: block;
+}
+
+.proj-out {
+	height: 150px;
+	width: 900px;
+	overflow: visible;
+	margin: auto;
+}
+
+.proj-img {
+	position: relative;
+	z-index: 1;
+}
+
+.proj-hov {
+	position: relative;
+	z-index: 2;
+	height: 100px;
+	width: 250px;
+	padding: 25px;
+	background-color: rgba(255,255,255,.9);
+	float: left;
+	text-align: center;
+	font-family: 'Play',sans-serif;
+	font-size: 18px;
+	opacity: 0;
+	transition: .5s;
+	-o-transition: .5s;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+}
+
+.proj-hov b {
+	font-family: 'Press Start 2P', cursive;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: normal;
+	display: block;
+	padding-bottom: 22px;
+}
+
+.proj-hov b a {
+	text-decoration: none;
+	color: #000000;
+}
+
+.proj-hov b a:hover {
+	text-decoration: underline!important;
+}
+
+.proj-bot {
+	margin-top: -150px;
+}
+
+.proj-hov:hover {
+	opacity: 1;
+	transition: .5s;
+	-o-transition: .5s;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
 }
