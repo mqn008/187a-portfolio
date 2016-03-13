@@ -221,16 +221,24 @@ h4 p {
 	text-transform: uppercase;
 	font-weight: normal;
 	display: block;
-	padding-bottom: 22px;
+	padding-bottom: 12px;
 }
 
 .proj-hov b a {
-	text-decoration: none;
+	text-decoration: underline;
 	color: #000000;
 }
 
-.proj-hov b a:hover {
-	text-decoration: underline!important;
+
+.proj-hov a {
+	color: #000000;
+}
+
+.proj-hov p {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-bottom: 7px;
 }
 
 .proj-bot {
