@@ -6,6 +6,18 @@ body {
 	background-position: 0px -100px;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
+	color: #000000;
+	overflow: hidden;
+}
+
+#whole {
+	top: 120px;
+	padding-top: 20px;
+	position: absolute;
+	z-index: 80;
+	height: 70%;
+	overflow-y: scroll;
+	margin-right: 30px;
 }
 
 #navbar {
@@ -16,23 +28,17 @@ body {
 	height: 100px;
 	text-align: left;
 	display: block;
-	z-index: 0
-}
-
-#contents {
-	position: absolute;
-	width: 100%;
-	padding: 0px;
-	top: 90px;
-	left: 0px;
-	z-index: 1;
+	z-index: 99;
+	background-color: #79c9f9;
 }
 
 #name {
 	margin: 0px;
 	padding: 0px;
-	padding-left: 30px;
-	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding-left: 35px;
 	height: 100px;
 }
 
@@ -40,9 +46,10 @@ body {
 	text-transform: lowercase;
 	height: 100px;
 	line-height: 100px;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 40px;
-	letter-spacing: 2px;
+	font-family: 'Press Start 2P', cursive;
+	color: #000000;
+	font-size: 32px;
+	letter-spacing: -1px;
 	display: inline-block;
 	font-weight: normal;
 	float: left;
@@ -66,12 +73,13 @@ body {
 
 ul.tabs {
 	width: 620px;
-	display: inline-block;
 	margin: 0px;
-	margin-top: 2px;
 	padding: 0px;
+	top: 0;
+	right: 0;
 	list-style: none;
-	float: right;
+	position: absolute;
+	height: 100px;
 }
 
 ul.tabs li, ul.tabs li a {
@@ -79,29 +87,17 @@ ul.tabs li, ul.tabs li a {
 	height: 100px;
 	width: 200px;
 	text-align: center;
-	vertical-align: middle;
+	vertical-align: top;
 	line-height: 100px;
 	text-align: center;
-	font-size: 30px;
-	font-family: "Montserrat";
-	color: #222222;
+	font-size: 24px;
+	font-family: 'Press Start 2P', cursive;
+	color: #000000;
 	text-transform: uppercase;
 	text-decoration: none;
 }
 
 .current-tab { text-decoration: underline!important; }
-
-.tab-content {
-	display: none;
-	padding: 20px;
-	height: 100%;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 15px;
-}
-
-.tab-content.current {
-	display: block;
-}
 
 #footer {
 	clear: both;
@@ -109,28 +105,61 @@ ul.tabs li, ul.tabs li a {
 }
 
 #about, #projects, #contact {
-	display: block;
+	width: 98%;
 	margin: auto;
 }
 
 #abt {
-	display: inline-block;
-	margin-top: 250px;
-	margin-bottom: 450px;
+	margin-bottom: 500px;
 }
 
 #proj {
-	margin-top: 160px;
-	display: inline-block;
+	margin-top: 120px;
 }
 
 #proj-in {
-	width: 516px;
 	margin: auto;
-	margin-top: 20px;
 }
 
-#cont {
-	margin-top: 250px;
-	display: inline-block;
+#cont {	
+	margin-top: 120px;
+}
+
+#contents {
+	width: 98%;
+}
+
+#contents h1 {
+
+	font-family: 'Press Start 2P', cursive;
+	margin: 0px 0px 0px 70px;
+	text-transform: uppercase;
+	font-size: 22px;
+}
+
+#contents h5 {
+	margin-top: 40px;
+}
+
+#contents h5 p {
+	font-family: 'Play', sans-serif;
+	font-size: 26px;
+	margin: 25px 50px 0px 120px;
+	text-indent: -21px;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(255,255,255,.01);
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #ffffff;
+	border-radius: 10%;
+	-webkit-border-radius: 10%;
+	-moz-border-radius: 10%;
+	-o-border-radius: 10%;
 }
